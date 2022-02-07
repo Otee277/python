@@ -1,0 +1,25 @@
+# PROGRAM TO USER'S SCORES AND GIVE AVEREGE SCORE AND AVERAGE GRADE:
+
+print("Enter scores in these subject:")
+math = int(input("Maths:"))
+eng = int(input("Eng:"))
+sci = int(input("Sci:"))
+hist = int(input("Hist:"))
+musc = int(input("Music:"))
+av_score = (math+eng+sci+hist+musc)/5
+av_grade=""
+if av_score>=70 and av_score<=100:
+  av_grade="A"
+elif av_score>=60 and av_score<=69:
+  av_grade="B"
+elif av_score>=50 and av_score<=59:
+  av_grade="C"
+elif av_score>=40 and av_score<=49:
+  av_grade="D"
+elif av_score>=30 and av_score<=39:
+  av_grade="Fail"
+if math or eng or sci or hist or musc <0 and math or eng or sci or hist or musc > 100:
+  print("Enter a valid inputs")
+else:
+  print("Average score is: ",av_score)
+  print("Your average grade is: ",av_grade)
